@@ -38,7 +38,7 @@ For example if you want to have if / else or loops in your render in ReactJS, I 
 ```
 While in Angular, the same would look like:
 ```html
-        <div class="col-md-12" *ngFor="let newsItem of newsItem">
+        <div class="col-md-12" *ngFor="let newsItem of news">
           <app-newsItem [article]="newsItem"></app-newsItem>
         </div>
 ```
