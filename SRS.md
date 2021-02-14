@@ -25,6 +25,9 @@ The front-end will allow the user to specify what kind of data that the user wan
 ![An wireframe image of proposed layout](./images/wireframe.png)
 
 The back-end will in return, generate mock-data based of the inputs from the user, and then return the data in the specified format.
+
+![An image of the process of generating data](./images/Generate_data_process.png)
+
 ## 2.3 Intended users
 The application is inteded for developers and testers that need mockdata.
 ## 2.4 Constraints
