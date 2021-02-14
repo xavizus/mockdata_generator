@@ -49,8 +49,8 @@ Example:
 
 | 123 | 2021-02-14 | Priority: 1 | 
 | --- | ---------- | ----------- |
-|<td colspan=3> This is a test title |
-|<td colspan=3> This is the description |
+<td colspan=3> This is a test title
+<td colspan=3> This is the description
 
 ## 3.2 System requirements and functional requirements
 
