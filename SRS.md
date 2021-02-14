@@ -46,11 +46,31 @@ Requirements need to have the following layout:
 - Date of creation: YYYY-MM-DD
 
 Example:
-
-| 123 | 2021-02-14 | Priority: 1 | 
-| --- | ---------- | ----------- |
-| Title <td colspan=2> This is a test title
-| Description <td colspan=2> This is the description
+<table>
+    <tbody>
+        <tr>
+            <td>
+                123
+            </td>
+            <td>
+                2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3>
+                This is the title of the requirement!
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3>
+                This is the description of the requirement
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## 3.2 System requirements and functional requirements
 
