@@ -129,17 +129,272 @@ The appropriation of requirements and implementation constraints gives the gener
                 DATE: 2021-02-14
             </td>
             <td>
+                Priority: 3
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Parallel processing
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                When the x number of rows reaches a specific limit, seperate the generation in to other threads.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
                 Priority: 1
             </td>
         </tr>
         <tr>
             <td colspan=4>
-                Request limiter
+                Allow users to customize data generation
             </td>
         </tr>
         <tr>
             <td colspan=4>
-                Allow requests to be limited.
+                Let the user get the possibility to generate multiple columns of different data.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow column generation to depend on another column
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Let user set columns to be dependet of each other.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Multiple table generation
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow the user to generate multiple sets of data.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Export to different format
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow the user to export the data into different formats, for example but not limited to:
+                <ul>
+                    <li>SQL (MySQL, PostGresql)</li>
+                    <li>JSON</li>
+                    <li>CSV</li>
+                    <li>XML</li>
+                    <li>Excel</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Set generated number of rows
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow the user to set the amount of rows that needs to be generated
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                SQL-format
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Let the user choose if the SQL-formatted data should create a table and name the table
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                JSON-format
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow the user to nest fields by using "." notation
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Sending the data without saving to disk on host
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                After the data have been generated, send the data as a stream instead of saving it to the disk on the host. See <a href='https://stackoverflow.com/questions/21578208/node-js-send-file-to-client'>StackOverflow</a>
             </td>
         </tr>
     </tbody>
@@ -491,18 +746,223 @@ The appropriation of requirements and implementation constraints gives the gener
     </tbody>
 </table>
 
-Interface requirements consist of the hardware and the software interfaces along with user and communication interfaces.
+---
 
-- User interfaces consist of the style guides, screen layout, buttons, functions.
-- The software interfaces consists of the platform, database system, front end and the backend framework, operating systems, tools and libraries.
-- Hardware interfaces includes details of the hardware components like the list of supported devices, nature of data and the hardware-software interactions.
-- Communications interfaces are the network server communications protocols. The requirements determine the communication standards to be utilized.
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Estimate time
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Inform the user the estimate time for the data generation.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Duration time
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Show the user the duration while the file is being generated.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Parallel jobs status
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Inform the user when one of the parallel jobs are done.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## 3.4 Non-functional requirements
-The non-functional requirements constitute the following:
 
-- Performance requirements
-- Safety requirements
-- Security requirements
-- Software quality attributes
-- Other requirements
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Datageneration performance
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                For each column per 1 milion row, should follow an liniar increasment of maximum 2.0 seconds.
+                Example: </br>
+                User want to generate 1 milion rows with 10 columns, the expected time should be 20.0 seconds.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Datageneration performance
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                For each column per 1 milion row, should follow an liniar increasment of maximum 2.0 seconds.
+                Example: </br>
+                User want to generate 1 milion rows with 10 columns, the expected time should be 20.0 seconds.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Testing
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Atleast 80% of the code in the backend should be covered in with tests.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Request Limiter
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The application should be able to handle request limiting that's configureble.
+            </td>
+        </tr>
+    </tbody>
+</table>
