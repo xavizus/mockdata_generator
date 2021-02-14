@@ -24,7 +24,7 @@ The application will allow the user to create unlimited amount of named columns 
 
 For this project, I've decided to use NodeJS in the backend and Angular for the frontend, with an added flavour with TypeScript. The sole reason I've chosen NodeJS for the backend are that I don't need to change mindset, when I switch between backend and frontend development, both will be written in JavaScript. Because I like the positive features of the typed languages, for example catch early bugs because a variable changes from a "number" to a "string". Typed variables also enforces readability, how do you name a variable containing a "number" then you reuse the same variable, for a "string". Therefore the project will be built with TypeScript.
 
-For the frontend, I've decieded to use Angular (not AngularJS), for the simple reason, it's using TypeScript as default. I know that ReactJS also support TypeScript and that you can generate a React app with `npx create-react-app AppName --template typescript`, but I find that Angular is more suited, because of the cleaness.
+For the frontend, I've decieded to use Angular (not AngularJS), for the simple reason, it's using TypeScript as default. I know that ReactJS also support TypeScript and that you can generate a React app with `npx create-react-app AppName --template typescript`, but I find that Angular is more suited, because of the cleaness, which is the second reason I choose Angular.
 
 For example if you want to have if / else or loops in your render in ReactJS, I find it quite ugly syntax for it:
 ```javascript
@@ -42,6 +42,8 @@ While in Angular, the same would look like:
           <app-newsItem [article]="newsItem"></app-newsItem>
         </div>
 ```
+
+The third reason, is that you can seperate the HTML code from the JavaScript code, and keep the html code readable, compared to React, where you must write the HTML code inside a JSX file.
 
 ## 2.2 Product functions
 The frontend will allow the user to specify what kind of data that the user want to generate. 
