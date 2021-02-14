@@ -40,6 +40,10 @@ The application maybe used in the public domain, which may require request limit
 Requirements need to have the following layout:
 - Requirment ID: ####
 - Requirement type: SR, FR, EIR, NFR
+    - SR - System requirement
+    - FR - Functional requirement
+    - EIR - External Interface Requirement
+    - NFR - Non-Functional Requriement
 - Priority: 1-5 (where 1 is urgent and 5 least urgent)
 - Title: Short description of the requirement
 - Content: Detailed information of the requiremnt
@@ -50,35 +54,443 @@ Example:
     <tbody>
         <tr>
             <td>
-                123
+                Type: SR
             </td>
             <td>
-                2021-02-14
+                ID: 123
+            </td>
+            <td>
+                DATE: 2021-02-14
             </td>
             <td>
                 Priority: 1
             </td>
         </tr>
         <tr>
-            <td colspan=3>
+            <td colspan=4>
                 This is the title of the requirement!
             </td>
         </tr>
         <tr>
-            <td colspan=3>
+            <td colspan=4>
                 This is the description of the requirement
             </td>
         </tr>
     </tbody>
 </table>
 
-## 3.2 System requirements and functional requirements
+## 3.2 System requirements
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: SR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Shall support any Linux based operatingsystem
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The application shall be able to be installed onto any linux distro that support NodeJS.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 The functional requirements or the overall description documents include the product perspective and features, operating system and operating environment, graphics requirements, design constraints and user documentation.
 
 The appropriation of requirements and implementation constraints gives the general overview of the project in regards to what the areas of strength and deficit are and how to tackle them.
 
+## 3.3 Functional requirements
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Request limiter
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Allow requests to be limited.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ## 3.3 External interface requirements
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Backend programming language
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The backend will be programmed in NodeJS
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Frontend framework
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend framework will be Angular (Not AngularJS)
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Frontend and Backend flavour
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Both the frontend and backend need to be using TypeScript
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Backend framework
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The backend framework needs to be ExpressJS
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Backend framework
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Both the frontend and backend need to be using TypeScript
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Communication between frontend and backend
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The backend need to follow the REST API standard to allow an ease communication between frontend and backend.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                REST API over HTTP
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The REST API need to communicate over HTTP.
+                Nice to have: Instead of HTTP, support HTTP2.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Screen sizes
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend need to support a minimal screensize of: 1366 x 768
+                The frontend need to support a maximal screensize of: 3840 x 2160
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Screen sizes
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend need to support a minimal screensize of: 1366 x 768
+                The frontend need to support a maximal screensize of: 3840 x 2160
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Identify logged in users
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                User identity will be verfied with JSON Web Token.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                In-memory Database
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                For rate-limit, an in-memory database is needed. Redis will be used.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 Interface requirements consist of the hardware and the software interfaces along with user and communication interfaces.
 
 - User interfaces consist of the style guides, screen layout, buttons, functions.
