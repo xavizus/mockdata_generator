@@ -21,6 +21,28 @@ This applicaiton will be a web-based application, where the front-end will be a 
 ![Image how the frontend and backend are dependent of eachother](./images/block_diagram.png)
 
 The application will allow the user to create unlimited amount of named columns with typed data and then generate structured mock data depending on how many rows the user needs and export the generated data to a perferred format.
+
+For this project, I've decided to use NodeJS in the backend and Angular for the frontend, with an added flavour with TypeScript. The sole reason I've chosen NodeJS for the backend are that I don't need to change mindset, when I switch between backend and frontend development, both will be written in JavaScript. Because I like the positive features of the typed languages, for example catch early bugs because a variable changes from a "number" to a "string". Typed variables also enforces readability, how do you name a variable containing a "number" then you reuse the same variable, for a "string". Therefore the project will be built with TypeScript.
+
+For the frontend, I've decieded to use Angular (not AngularJS), for the simple reason, it's using TypeScript as default. I know that ReactJS also support TypeScript and that you can generate a React app with `npx create-react-app AppName --template typescript`, but I find that Angular is more suited, because of the cleaness.
+
+For example if you want to have if / else or loops in your render in ReactJS, I find it quite ugly syntax for it:
+```javascript
+    return (
+        <div className='col-md-12'>
+            {news.map((newsItem, Index) => {
+                return <NewsItem article={newsItem}></NewsItem>
+            })}
+        </div>
+    );
+```
+While in Angular, the same would look like:
+```html
+        <div class="col-md-12" *ngFor="let newsItem of newsItem">
+          <app-newsItem [article]="newsItem"></app-newsItem>
+        </div>
+```
+
 ## 2.2 Product functions
 The frontend will allow the user to specify what kind of data that the user want to generate. 
 
@@ -34,10 +56,12 @@ The backend will in return, generate mock-data based of the inputs from the user
 
 ## 2.3 Intended users
 The application is inteded for developers and testers that need mockdata.
+
 ## 2.4 Constraints
 Because tha application will run as a back-end and front-end application, an internet connection will be needed, though it will be able to run it all on one single machine.
 
 The application maybe used in the public domain, which may require request limiting or request queing, and therefore needs a way to to store temporary data.
+
 ## 2.5 References 
 - Mockaroo.com | The project will take insperation from this site
 
@@ -1009,6 +1033,37 @@ Example:
     </tbody>
 </table>
 
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Multi-language support
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend need to be userfriendly and support screen-readers and ease to use for colorblind and blind users. The text layout shall follow 
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ## 3.4 Non-functional requirements
 
 <table>
@@ -1200,6 +1255,72 @@ Example:
                     <li>Follow DRY, Don't Repeat Yourself, principle</li>
                     <li>Don't use generic names for functions, classes or variables.</li>
                 </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Response times
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Tasks that take more than 1 second, shall display a loading feedback, for example a loading icon.
+                </br>
+                Tasks that take less than 1 second, is an instantaneous operation and does not need any feedback
+                </br>
+                Tasks that take more than 10 second, shall display a loading feedback, for example a loading icon and show an estimated time until completion if possible.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                White labelling
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Shall be easy to change colour scheme, logotype, organization name.
             </td>
         </tr>
     </tbody>
