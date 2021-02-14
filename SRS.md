@@ -10,7 +10,8 @@ It seems that it does not exist any open-source project that allows an user to g
 
 | Term | Definition |
 | ---- | ---------- |
-| A term | A definition |
+| HTTP | **H**yper**T**ext **T**ransport **P**rotocol |
+| WCAG | **W**eb **C**ontent **A**ccessibility **G**uidelines |
 
 # 2. Overall description
 
@@ -21,10 +22,13 @@ This applicaiton will be a web-based application, where the front-end will be a 
 
 The application will allow the user to create unlimited amount of named columns with typed data and then generate structured mock data depending on how many rows the user needs and export the generated data to a perferred format.
 ## 2.2 Product functions
-The front-end will allow the user to specify what kind of data that the user want to generate. When the user have filled in the specification of wanted generated data, the front-end will send an api request to the backend.
+The frontend will allow the user to specify what kind of data that the user want to generate. 
+
 ![An wireframe image of proposed layout](./images/wireframe.png)
 
-The back-end will in return, generate mock-data based of the inputs from the user, and then return the data in the specified format.
+When the user have filled in the specification of wanted generated data, the frontend will send an api request to the backend.
+
+The backend will in return, generate mock-data based of the inputs from the user, and then return the data in the specified format.
 
 ![An image of the process of generating data](./images/Generate_data_process.png)
 
@@ -113,10 +117,6 @@ Example:
     </tbody>
 </table>
 
-The functional requirements or the overall description documents include the product perspective and features, operating system and operating environment, graphics requirements, design constraints and user documentation.
-
-The appropriation of requirements and implementation constraints gives the general overview of the project in regards to what the areas of strength and deficit are and how to tackle them.
-
 ## 3.3 Functional requirements
 
 <table>
@@ -174,6 +174,99 @@ The appropriation of requirements and implementation constraints gives the gener
         <tr>
             <td colspan=4>
                 Let the user get the possibility to generate multiple columns of different data.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Named columns
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Let the user name their columns.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Remove columns
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Let the user remove columns from the wanted structure.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: FR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Move columns
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Let the user with drag and drop feature move columns in their wanted order.
             </td>
         </tr>
     </tbody>
@@ -549,37 +642,6 @@ The appropriation of requirements and implementation constraints gives the gener
         </tr>
         <tr>
             <td colspan=4>
-                Backend framework
-            </td>
-        </tr>
-        <tr>
-            <td colspan=4>
-                Both the frontend and backend need to be using TypeScript
-            </td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-<table>
-    <tbody>
-        <tr>
-            <td>
-                Type: EIR
-            </td>
-            <td>
-                ID: ###
-            </td>
-            <td>
-                DATE: 2021-02-14
-            </td>
-            <td>
-                Priority: 1
-            </td>
-        </tr>
-        <tr>
-            <td colspan=4>
                 Communication between frontend and backend
             </td>
         </tr>
@@ -743,7 +805,7 @@ The appropriation of requirements and implementation constraints gives the gener
         </tr>
         <tr>
             <td colspan=4>
-                For rate-limit, an in-memory database is needed. Redis will be used.
+                For rate-limit, an in-memory database is needed for fast transactions. The database Redis will be used.
             </td>
         </tr>
     </tbody>
@@ -837,6 +899,111 @@ The appropriation of requirements and implementation constraints gives the gener
         <tr>
             <td colspan=4>
                 Inform the user when one of the parallel jobs are done.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Data generation
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Use of faker.js library to generate data as much as possible.
+                </br>
+                When faker.js does not meet the critera for the specific job, then it shall be possible to add custom made generation algorithms.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Userfriendly frontend
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend need to be userfriendly and support screen-readers and ease to use for colorblind and blind users. The text layout shall follow 
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: EIR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Follow WCAG 2.1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                The frontend need to follow the following standards of WCAG 2.1:
+                <ul>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color">1.4.1 Use of Colors</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum">1.4.3 Contrast (Minimum)</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text">1.4.4 Resize text</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#text-spacing">1.4.11 Text Spacing</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard">2.1 Keyboard Accessible</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide">2.2 Enough Time</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#label-in-name">2.5 Input modalities</a></li>
+                    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page">3 Understandable</a></li>
+                </ul>
             </td>
         </tr>
     </tbody>
@@ -965,6 +1132,74 @@ The appropriation of requirements and implementation constraints gives the gener
         <tr>
             <td colspan=4>
                 The application should be able to handle request limiting that's configureble.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Code standard
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                All code need to follow the eslint standard, that's included to the project.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Type: NFR
+            </td>
+            <td>
+                ID: ###
+            </td>
+            <td>
+                DATE: 2021-02-14
+            </td>
+            <td>
+                Priority: 1
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                Code readability
+            </td>
+        </tr>
+        <tr>
+            <td colspan=4>
+                <ul>
+                    <li>Don’t use abbreviations</li>
+                    <li>Name functions what they do, if the name gets to long, then the function may be needs to be refactored</li>
+                    <li>Name variables what they contains or what they are inteded to be used for</li>
+                    <li>Follow DRY, Don't Repeat Yourself, principle</li>
+                    <li>Don't use generic names for functions, classes or variables.</li>
+                </ul>
             </td>
         </tr>
     </tbody>
