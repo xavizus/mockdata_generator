@@ -46,7 +46,22 @@ While in Angular, the same would look like:
 The third reason, is that you can seperate the HTML code from the JavaScript code, and keep the html code readable, compared to React, where you must write the HTML code inside a JSX file.
 
 ## 2.2 Product functions
-The frontend will allow the user to specify what kind of data that the user want to generate. 
+The frontend will load a default preset settings to let the user get a small hint what the user can do with the application.
+
+The user is not limited to the preset settings, the user can do the following:
+- Remove fields
+- Rename fields 
+- Change field type
+- Set other options depending of the field type to futher customize the generation
+- Add new fields
+- Move fields in different orders
+- Set the amount of rows that the user want to generate
+- Let the user choose a format to export the generated data to
+- Download the generated file
+
+![A use case diagram](./images/frontend_flow.png)
+
+Following picture shows an example how the design of the UI could look like.
 
 ![An wireframe image of proposed layout](./images/wireframe.png)
 
@@ -57,7 +72,7 @@ The backend will in return, generate mock-data based of the inputs from the user
 ![An image of the process of generating data](./images/Generate_data_process.png)
 
 ## 2.3 Intended users
-The application is inteded for developers and testers that need mockdata.
+The application is inteded for developers and testers that need a large amount of mockdata.
 
 ## 2.4 Constraints
 Because tha application will run as a back-end and front-end application, an internet connection will be needed, though it will be able to run it all on one single machine.
@@ -112,6 +127,8 @@ Example:
     </tbody>
 </table>
 
+---
+
 ## 3.2 System requirements
 
 <table>
@@ -142,6 +159,8 @@ Example:
         </tr>
     </tbody>
 </table>
+
+---
 
 ## 3.3 Functional requirements
 
@@ -522,9 +541,9 @@ Example:
     </tbody>
 </table>
 
-## 3.3 External interface requirements
-
 ---
+
+## 3.3 External interface requirements
 
 <table>
     <tbody>
@@ -1065,6 +1084,8 @@ Example:
         </tr>
     </tbody>
 </table>
+
+---
 
 ## 3.4 Non-functional requirements
 
