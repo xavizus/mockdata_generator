@@ -19,13 +19,8 @@ export class AppConfig
     return this.config[key as keyof Config];
   }
 
-  public downloadConfigFile(): any {
-    return new Promise(resolve => {
-      this.http.get<Config>(this.configUrl).subscribe(data => {
-        this.config = data;
-        resolve(true);
-      });
-
-    });
+  async downloadConfigFile(): Promise<void> {
+      const result = await this.http.get<Config>(this.configUrl).toPromise();
+      this.config = result;
   }
 }
