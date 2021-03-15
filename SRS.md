@@ -71,13 +71,20 @@ The backend will in return, generate mock-data based of the inputs from the user
 
 ![An image of the process of generating data](./images/Generate_data_process.png)
 
+Because tha application will run as a back-end and front-end application, an internet connection will be needed, though it will be able to run it all on one single machine.
+
+The application maybe used in the public domain, which may require request limiting or request queing, and therefore needs a way to to store temporary data.
+
 ## 2.3 Intended users
 The application is inteded for developers and testers that need a large amount of mockdata.
 
 ## 2.4 Constraints
-Because tha application will run as a back-end and front-end application, an internet connection will be needed, though it will be able to run it all on one single machine.
+This project will be timelimited for 6 weeks, therefore, the most of the development time will go to deliver the functional aspect before the UX design.
 
-The application maybe used in the public domain, which may require request limiting or request queing, and therefore needs a way to to store temporary data.
+## 2.5 Risks
+The risks that could show up during application development are:
+- 1. Some prioritzed items may not be developed in time because of thier complexity
+- 2. 
 
 ## 2.5 References 
 - Mockaroo.com | The project will take insperation from this site
